@@ -3,6 +3,7 @@
 # ENUNCIADO:
 # Reverta a ordem das palavras nas frases, mantendo a ordem das palavras:
 
-entrada = input("Input: ") # Pedindo a entrada do usuário 
+entrada = input("Input: ")  # Pedindo a entrada do usuário 
 guardaEntrada = list(reversed(entrada.split())) # Listando as palavras da ultima posição à primeira
-print (guardaEntrada)
+entradaUnida = ' '.join(guardaEntrada)  # Unindo a lista para uma linha
+print ("Output:", entradaUnida)  # Imprimindo a ordem reversa da entrada
