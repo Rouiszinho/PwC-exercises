@@ -9,6 +9,6 @@ guardaCaractere = []
 for caractere in entrada:                     # Checando se não há caracteres repetidos
     if caractere not in guardaCaractere:
         guardaCaractere.append(caractere)
+textoFinal = "".join(guardaCaractere)         # Unindo o array para uma frase
 
-
-print("Output:", guardaCaractere)                  # Imprimindo a frase
+print("Output:", textoFinal)                  # Imprimindo a frase
