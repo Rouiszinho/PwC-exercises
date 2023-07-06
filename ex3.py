@@ -10,8 +10,10 @@ entrada = input("Input: ")
 normalizado = unicodedata.normalize('NFD', entrada)
 texto = re.compile(r'[a-zA-Z]')
 correspondencia = texto.finditer(normalizado.lower())
-tras =''.join(reversed(normalizado.lower()))
+entradaInversa =''.join(reversed(normalizado.lower()))
+correspondenciaInversa = texto.finditer(entradaInversa)
 
-for i in correspondencia:
-    print(i.group())
-print(tras)
+
+
+
+
