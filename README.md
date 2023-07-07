@@ -10,6 +10,6 @@ Each file aims at a statement congruent with the number present in the file, we 
 2. Remove all duplicate characters from the string below
 3. Find the longest palindrome substring in the string below
 4. Capitalize the first letter of each sentence in the string
-5. Check if the string is an anagram of a palindrome
+5. Check if the string is an anagram of a palindrome 
 
 Note: Each file has its statement at the beginning of the commented code. feel free to check them out :wink:
