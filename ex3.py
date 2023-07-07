@@ -16,11 +16,17 @@ def normalizacao(frase):
 
     return juncao
 
-
+def palindromo(frase):
+    return
+    
 frase = input("Input: ")
 frase = normalizacao(frase)
 maior = ""
 for i in range(0, len(frase)):
     for j in range(i, len(frase)):
-     print(maior)
-
+        p = palindromo(frase[i:j+1])
+        
+        if(p and len(p) > len(maior)):
+            maior = p
+            
+print(maior)
