@@ -21,7 +21,7 @@ def palindromo(frase):                                  # Conferindo se a frase 
     if palindro and len(frase) > 1:
         return frase
     
-frase = input("Input: ")                                # Pedindo a entrada do usuário
+frase = input("Input: ")                                # Solicita a entrada do usuário
 frase = normalizacao(frase)                             # Chamando função interna normalizacao 
 maior = ""                                              # Craindo variável maior para armazenar o maior palindromo
 for i in range(0, len(frase)):                          # Loop para obter o caratere na posição i
