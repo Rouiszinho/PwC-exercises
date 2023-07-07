@@ -3,7 +3,7 @@
 # ENUNCIADO:
 # Remova todos os caracteres duplicados da string abaixo:
 
-entrada = input("Input: ")                    # Pedindo a entrada do usuário
+entrada = input("Input: ")                    # Solicita a entrada do usuário
 guardaCaractere = []
 
 for caractere in entrada:                     # Checando se não há caracteres repetidos
