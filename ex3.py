@@ -17,3 +17,10 @@ def normalizacao(frase):
     return juncao
 
 
+frase = input("Input: ")
+frase = normalizacao(frase)
+maior = ""
+for i in range(0, len(frase)):
+    for j in range(i, len(frase)):
+     print(maior)
+
