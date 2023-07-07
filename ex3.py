@@ -17,11 +17,7 @@ def normalizacao(frase):                                # Obtendo somente os car
     return juncao
 
 def palindromo(frase):                                  # Conferindo se a frase é um palindromo
-    palindro=True
-    for i in range(0, len(frase)):
-        if(frase[i] != frase[len(frase)-i-1]):
-            palindro = False
-                
+    palindro = frase == ''.join(reversed([*frase]))
     if palindro and len(frase) > 1:
         return frase
     
