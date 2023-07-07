@@ -3,17 +3,17 @@
 # ENUNCIADO:
 # Encontre a substring palindroma mais longa na string abaixo:
 
-import re
+import re                                                              
 import unicodedata
 
-entrada = input("Input: ")
-normalizado = unicodedata.normalize('NFD', entrada)
-texto = re.compile(r'[a-zA-Z]')
-correspondencia = texto.finditer(normalizado.lower())
-entradaInversa =''.join(reversed(normalizado.lower()))
-correspondenciaInversa = texto.finditer(entradaInversa)
+def normalizacao(frase):
+    normalizado = unicodedata.normalize('NFD', frase)
+    texto = re.compile(r'[a-z]')
+    correspondencia = list(texto.finditer(normalizado.lower()))
+    juncao = ""
+    for i in correspondencia:
+        juncao += i.group()
 
-
-
+    return juncao
 
 
