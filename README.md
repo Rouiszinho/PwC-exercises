@@ -14,4 +14,6 @@ Each file aims at a statement congruent with the number present in the file, we 
 4. Capitalize the first letter of each sentence in the string
 5. Check if the string is an anagram of a palindrome 
 
-Note: Each file has its statement at the beginning of the commented code. Feel free to check them out :wink:
+Each file has its statement at the beginning of the commented code. Feel free to check them out :wink:
+
+Note: It is possible that your security tool will alert you about unknown author. If so, proceed by allowing the program to run. :+1:
