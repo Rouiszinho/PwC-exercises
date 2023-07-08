@@ -1,23 +1,23 @@
 # Code by Luiz / Rouiszinho
 #
 # ENUNCIADO:
-# Coloque em maiúscula a primeira letra de cada frase na string:
+# Coloque em maiúscula a primeira letra de cada phrase na string:
 
 
-frase = input("Input: ")                    # Solicita uma frase de entrada do usuário
-frase = [*frase]                            # Converte a frase em uma lista de caracteres 
-acentos = "?!."
+phrase = input("Input: ")                     # Prompts for a phrase for user input
+phrase = [*phrase]                            # Converts the phrase to a list of characters 
+accents = "?!."
 
-for i in range(0, len(frase)):
+for i in range(0, len(phrase)):
     
     if i == 0:
-        frase[i] = frase[i].upper()         # Capitaliza o primeiro caractere da frase
-    elif i == len(frase)-1:
-        break                               # Encerra o loop antes do último caractere
-    if frase[i] in acentos:
-        if frase[i+1] == ' ':
-            frase[i+2] = frase[i+2].upper() # Capitaliza o próximo caractere se houver um espaço após o acento
+        phrase[i] = phrase[i].upper()         # Capitalizes the first character of the sentence
+    elif i == len(phrase)-1:
+        break                                 # End the loop before the last character
+    if phrase[i] in accents:
+        if phrase[i+1] == ' ':
+            phrase[i+2] = phrase[i+2].upper() # Capitalizes the next character if there is a space after the accent
         else:
-            frase[i+1] = frase[i+1].upper() # Capitaliza o próximo caractere
-frase = ''.join(frase)                      # Converte a lista de caracteres de volta para uma string
-print("Output: ", frase)                    # Imprime a frase resultante
+            phrase[i+1] = phrase[i+1].upper() # Capitalizes the next character
+phrase = ''.join(phrase)                      # Converts the list of characters back to a string
+print("Output: ", phrase)                     # Prints the resulting sentence

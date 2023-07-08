@@ -6,29 +6,29 @@
 import re                                                              
 import unicodedata
 
-def normalizacao(frase):                                # Obtendo somente os caracteres de texto 
-    normalizado = unicodedata.normalize('NFD', frase)
-    texto = re.compile(r'[a-z]')
-    correspondencia = list(texto.finditer(normalizado.lower())) 
-    juncao = ""
-    for i in correspondencia:
-        juncao += i.group()
+def normalization(phrase):                                # Getting only the text characters
+    normalized = unicodedata.normalize('NFD', phrase)
+    text = re.compile(r'[a-z]')
+    correspondence = list(text.finditer(normalized.lower())) 
+    junction = ""
+    for character in correspondence:
+        junction += character.group()
 
-    return juncao
+    return junction
 
-def palindromo(frase):                                  # Conferindo se a frase é um palindromo
-    palindro = frase == ''.join(reversed([*frase]))
-    if palindro and len(frase) > 1:
-        return frase
+def palindromo(phrase):                                  # Checking if the sentence is a palindrome
+    palindro = phrase == ''.join(reversed([*phrase]))
+    if palindro and len(phrase) > 1:
+        return phrase
     
-frase = input("Input: ")                                # Solicita a entrada do usuário
-frase = normalizacao(frase)                             # Chamando função interna normalizacao 
-maior = ""                                              # Craindo variável maior para armazenar o maior palindromo
-for i in range(0, len(frase)):                          # Loop para obter o caratere na posição i
-    for j in range(i, len(frase)):                      # Loop conferindo do caractere i até o fim da frase
-        p = palindromo(frase[i:j+1])                    # Chamando a função interna palindromo passando de i até j+1
+phrase = input("Input: ")                                # Asks for user input
+phrase = normalization(phrase)                           # Calling the normalization function 
+bigger = ""                                              # Creating bigger variable to store bigger palindrome
+for i in range(0, len(phrase)):                          # Loop to get character at position i
+    for j in range(i, len(phrase)):                      # Loop checking from character i to end of sentence
+        p = palindromo(phrase[i:j+1])                    # Calling palindrome inner function passing from i to j+1
         
-        if(p and len(p) > len(maior)):
-            maior = p
+        if(p and len(p) > len(bigger)):
+            bigger = p
             
-print("Output", maior)                                  # Impressão da substring palindrômica mais longa             
+print("Output", bigger)                                  # Longest palindromic substring printout             
