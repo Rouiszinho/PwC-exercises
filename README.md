@@ -3,6 +3,8 @@ My name is Luiz Henrique Almeida Ribeiro / Rouiszinho:v:
 
 This project addresses the PwC code challenge, in this challenge we had a period of 6 days to carry out a series of exercises announced later.
 
+In the Codes folder we have the files with the code belonging to each executable in the Executables folder, both having the same name, changing only the file type.
+
 ## Challenges
 Each file aims at a statement congruent with the number present in the file, we can see the statement of each one below:
 
