@@ -34,7 +34,7 @@ while True:
             if (p and len(p) > len(bigger)):
                 bigger = p
 
-    print("Output", bigger)                  # Longest palindromic substring printout
+    print("Output:", bigger)                  # Longest palindromic substring printout
     user_input = input("Press Enter to close or type 'exit' to exit: ")
     if user_input == "":
         break                                # Exit the loop and exit the program
