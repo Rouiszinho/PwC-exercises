@@ -3,12 +3,12 @@
 # ENUNCIADO:
 # Remova todos os caracteres duplicados da string abaixo:
 
-entrada = input("Input: ")                    # Solicita a entrada do usuário
-guardaCaractere = []
+userInput = input("Input: ")                    # Asks for user input
+characterGuard = []
 
-for caractere in entrada:                     # Checando se não há caracteres repetidos
-    if caractere not in guardaCaractere:
-        guardaCaractere.append(caractere)
-textoFinal = "".join(guardaCaractere)         # Unindo o array para uma frase
+for character in userInput:                     # Checking if there are no repeated characters
+    if character not in characterGuard:
+        characterGuard.append(character)
+finalText = "".join(characterGuard)             # Joining the array to a sentence
 
-print("Output:", textoFinal)                  # Imprimindo a frase
+print("Output:", finalText)                     # Printing the sentence

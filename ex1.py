@@ -3,7 +3,7 @@
 # ENUNCIADO:
 # Reverta a ordem das palavras nas frases, mantendo a ordem das palavras:
 
-entrada = input("Input: ")                       # Solicita a entrada do usuário
-guardaEntrada = reversed(entrada.split())        # Listando as palavras da ultima posição à primeira
-entradaUnida = " ".join(guardaEntrada)           # Unindo a lista para uma frase
-print("Output:", entradaUnida)                   # Imprimindo a ordem reversa da entrada
+userInput = input("Input: ")                    # Ask for user input
+entryGuard = reversed(userInput.split())        # Listing words from last to first position
+joinedEntry = " ".join(entryGuard)              # Joining the list for a sentence
+print("Output:", joinedEntry)                   # Printing input reverse order
